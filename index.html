@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="sujith">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>JS color</title>
+    </head>
+    <body>
+        <button id="col">Click here </button>
+        <script>
+            function f(){
+                let color='#'+Math.floor(Math.random()*16777215).toString(16)
+                document.body.style.background=color;
+            }
+            const a=document.getElementById('col')
+            a.addEventListener("click",f);
+        </script>
+    </body>
+</html>
